@@ -53,12 +53,12 @@ namespace MonoDevelop.Debugger.Win32
 				return new int[GetDimensions ().Length];
 			}
 		}
-		
+
 		public int[] GetDimensions ()
 		{
 			return array != null ? array.GetDimensions () : new int[0];
 		}
-		
+
 		public object GetElement (int[] indices)
 		{
 			return new CorValRef (delegate {
@@ -88,14 +88,14 @@ namespace MonoDevelop.Debugger.Win32
 
 			return elements.ToArray ();
 		}
-		
+
 		public void SetElement (int[] indices, object val)
 		{
 			CorValRef it = (CorValRef) GetElement (indices);
 			obj.IsValid = false;
 			it.SetValue (ctx, (CorValRef) val);
 		}
-		
+
 		public object ElementType {
 			get {
 				return obj.Val.ExactType.FirstTypeParameter;

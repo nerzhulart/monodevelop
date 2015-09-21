@@ -43,7 +43,7 @@ namespace MonoDevelop.Debugger.Win32
 			this.var = var;
 			this.name = name;
 		}
-		
+
 		public override object Value {
 			get {
 				return var;
@@ -52,19 +52,19 @@ namespace MonoDevelop.Debugger.Win32
 				var.SetValue (Context, (CorValRef) value);
 			}
 		}
-		
+
 		public override string Name {
 			get {
 				return name;
 			}
 		}
-		
+
 		public override object Type {
 			get {
 				return var.Val.ExactType;
 			}
 		}
-		
+
 		public override DC.ObjectValueFlags Flags {
 			get {
 				return flags;

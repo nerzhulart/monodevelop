@@ -70,7 +70,7 @@ namespace MonoDevelop.Debugger.Win32
 				return ((CorValRef)Value).Val;
 			};
 		}
-		
+
 		public override object Type {
 			get {
 				if (!prop.CanRead)
@@ -78,13 +78,13 @@ namespace MonoDevelop.Debugger.Win32
 				return ((CorValRef)Value).Val.ExactType;
 			}
 		}
-		
+
 		public override object DeclaringType {
 			get {
 				return declaringType;
 			}
 		}
-		
+
 		public override object Value {
 			get {
 				if (cachedValue != null && cachedValue.IsValid)
@@ -132,7 +132,7 @@ namespace MonoDevelop.Debugger.Win32
 				ctx.RuntimeInvoke (func, declaringType.TypeParameters, thisobj != null ? thisobj.Val : null, args);
 			}
 		}
-		
+
 		public override string Name {
 			get {
 				if (index != null) {

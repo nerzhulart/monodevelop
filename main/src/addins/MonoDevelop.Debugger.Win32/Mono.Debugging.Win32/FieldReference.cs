@@ -61,13 +61,13 @@ namespace MonoDevelop.Debugger.Win32
 			: this (ctx, thisobj, type, field, null, ObjectValueFlags.Field)
 		{
 		}
-		
+
 		public override object Type {
 			get {
 				return ((CorValRef)Value).Val.ExactType;
 			}
 		}
-		
+
 		public override object DeclaringType {
 			get {
 				return type;
