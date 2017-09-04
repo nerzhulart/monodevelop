@@ -1,3 +1,8 @@
+[![obsolete JetBrains project](http://jb.gg/badges/obsolete-flat-square.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
+
+[JetBrains fork]
+
+
 **MonoDevelop** is a full-featured integrated development environment (IDE) for mono using Gtk#.
 
 See http://www.monodevelop.com for more info.  
